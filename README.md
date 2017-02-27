@@ -1,2 +1,2 @@
 # sav-koa-startkit
-startkit for savjs &amp; koa2
+startkit for savjs and koa2
