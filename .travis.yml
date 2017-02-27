@@ -5,3 +5,5 @@ deploy:
   provider: npm
   email: 86287344@qq.com
   skip_cleanup: true
+  api_key:
+    secure: RPBAJwlZCTYmkBCZNuV0P3111CA4Rn/gGYp+OR+CT5TnJ1wlu4vNCQr5H3Z+RRM2/lNS7sqn+3id6McG3gM+M+1wF/RmupT6s2BO3evu2oMbI4I80vN20A3br6c0lVoNrSjH8cJLLFQvcfAxL3gbTvWxghQBtQ6fxZRr2EEvHq7wgf48ipVr2aB8O0uT3TgS+MPxJbzTOm4ENTi4UpI3LoTBjyximt0oR+ns1kTp9VeqN/kKGncenYOsl/wXqD0YTXE9+D40QlHVTgPB1EXb142s+FjoJZr7+6/hnyo0TXTmcLjeurP6JOmd62BxwNaACjPykvkFx6do1kyzNwoQep0wPqamHuwL2Vu6KiOPLEq1gFBSRzYyLWjzn6eu0/4nHt8nkzYIA6rkSEFSyNaSQZuLxDwj0SEl+mx9mTx1sajybjzIQuQk1eWf25/Gh/y/qhKN6fc+gJs8Eox+L0gn7nCI3nGYD/wvvCEVgOtqgPAVhAOnopnhYbzFr6y+s75sFsitt4UxrfVpQr/jdie/LsooDFZh36sN8sEF1Hhwc/OT7GrHe//6TfDknybEzJBeycLhojrW7h9cBzH5OFkhqArb13fu4y/0Hy42z8HxlPKrTaMW2oRW5jOSHVPWShER3sWxdcgC1fd3nCJF+olnUETGz/b/W1TTWlDqo98tCpQ=

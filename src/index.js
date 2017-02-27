@@ -1,4 +1,6 @@
 import Koa from 'koa'
+import bodyParser from 'koa-bodyparser'
+
 import {Router} from 'sav-router'
 import {schemaPlugin} from 'sav-router-schema'
 
@@ -11,6 +13,7 @@ let port = 3000
 let app = new Koa()
 
 app.use(propPlugin)
+app.use(bodyParser())
 
 let router = new Router({
   case: 'camel'

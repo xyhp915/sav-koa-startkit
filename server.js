@@ -1,7 +1,7 @@
 require('babel-register')({
   "plugins": [
     "transform-decorators-legacy",
-    'transform-async-to-generator',
+    'transform-object-rest-spread',
     "transform-es2015-modules-commonjs"
   ]
 })
