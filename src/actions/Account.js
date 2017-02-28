@@ -4,13 +4,21 @@ import {AccountInterface} from './AccountInterface'
 @gen
 @impl(AccountInterface)
 export class Account {
-  async login () {
-
+  async login ({setState}) {
+    setState({
+      error: 0,
+      message: 'login successed'
+    })
   }
-  async logout () {
-
+  async logout ({setState}) {
+    setState({
+      message: 'logout successed'
+    })
   }
-  async profile () {
-
+  async profile ({setState}) {
+    setState({
+      userId: 1001,
+      userName: 'jetiny'
+    })
   }
 }
