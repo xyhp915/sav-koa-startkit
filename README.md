@@ -6,7 +6,7 @@ startkit for savjs and koa2
 ```js
 
 import Koa from 'koa'
-import {Router} from 'koa-router'
+import {Router} from 'sav-router'
 
 let app = new Koa()
 let router = new Router()
@@ -22,18 +22,29 @@ app.listen(3000)
 
 ```js
 
-@props({
-    path: 'account'
-})
-class AccountInterface {
-    @get
-    profile() {}
+class TestInterface {
+  @conf('hello', 'world')
+  test () {}
 }
 
-@gen
-@impl(AccountInterface)
-class Account {
-    async profile() {}
+@gen({auth: true})
+@impl(TestInterface)
+  class Test {
+  async test () {}
+}
+
+Test = {
+  name: 'Test',
+  props: {auth: true},
+  actions: {
+    test: {
+      name: 'test',
+      method: async test () {},
+      middleware: [
+        ['hello', 'world']
+      ]
+    }
+  }
 }
 
 ```

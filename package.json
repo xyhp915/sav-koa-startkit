@@ -40,7 +40,7 @@
     "nyc": "^10.0.0",
     "rollup": "^0.36.3",
     "rollup-plugin-babel": "^2.7.1",
-    "sav-decorator": "0.0.3",
+    "sav-decorator": "0.0.4",
     "sav-prop": "0.0.2",
     "sav-router": "0.0.5",
     "sav-router-schema": "0.0.1",

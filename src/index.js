@@ -4,7 +4,8 @@ import bodyParser from 'koa-bodyparser'
 import {Router} from 'sav-router'
 import {schemaPlugin} from 'sav-router-schema'
 
-import actions from './actions/index'
+import apis from './apis/index'
+import pages from './pages/index'
 
 import {propPlugin} from './koa-plugins/prop'
 import {authPlugin} from './router-plugins/auth'
@@ -22,7 +23,7 @@ let router = new Router({
 router.use(schemaPlugin)
 router.use(authPlugin)
 
-router.declare(actions)
+router.declare(apis.concat(pages))
 app.use(router.route())
 
 app.listen(port)
