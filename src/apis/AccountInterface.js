@@ -1,8 +1,6 @@
 import {get, post} from 'sav-router'
 import {req, res} from 'sav-router-schema'
 
-import {auth} from '../router-plugins/auth'
-
 export class AccountInterface {
   @res({
     props: {
@@ -10,26 +8,25 @@ export class AccountInterface {
       message: String
     }
   })
-  @post
+  @post()
   @req({
     props: {
-      userName: String,
+      username: String,
       password: String
     }
   })
-  @auth(false)
   login () {}
 
-  @res
-  @post
+  @res()
+  @post()
   logout () {}
 
   @res({
     props: {
-      userId: Number,
-      userName: String
+      uid: Number,
+      username: String
     }
   })
-  @get
+  @get()
   profile () {}
 }

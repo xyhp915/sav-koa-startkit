@@ -35,21 +35,26 @@
     "babel-preset-stage-3": "^6.22.0",
     "chai": "^3.5.0",
     "eslint-plugin-standard": "^2.0.1",
+    "htmling": "0.0.8",
     "koa": "^2.0.0-alpha.8",
     "koa-bodyparser": "^4.0.0",
     "nyc": "^10.0.0",
     "rollup": "^0.36.3",
     "rollup-plugin-babel": "^2.7.1",
-    "sav-decorator": "0.0.4",
-    "sav-prop": "0.0.2",
-    "sav-router": "0.0.5",
-    "sav-router-schema": "0.0.1",
+    "sav-decorator": "^1.0.6",
+    "sav-prop": "0.0.5",
+    "sav-router": "^1.0.11",
+    "sav-router-schema": "^1.0.3",
+    "sav-router-view": "^1.0.5",
     "sav-schema": "0.0.8",
     "standard": "^8.5.0",
     "watch-cli": "^0.2.1"
   },
   "standard": {
-    "parser": "babel-eslint"
+    "parser": "babel-eslint",
+    "ignore": [
+      "src/views/"
+    ]
   },
   "nyc": {
     "exclude": [
@@ -70,5 +75,8 @@
       "transform-es2015-modules-commonjs"
     ]
   },
-  "homepage": "https://github.com/savjs/sav-koa-startkit#readme"
+  "homepage": "https://github.com/savjs/sav-koa-startkit#readme",
+  "dependencies": {
+    "koa-favicon": "^2.0.0"
+  }
 }

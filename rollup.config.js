@@ -18,7 +18,7 @@ export default {
         'stage-3'
       ],
       'plugins': [
-        "transform-decorators-legacy"
+        'transform-decorators-legacy'
       ]
     })
   ],

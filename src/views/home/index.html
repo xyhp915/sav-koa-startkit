@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+</head>
+<body>
+  <h2>{{title}}</h2>
+  <a href="about">About Page</a><br>
+  
+  <a href="account/profile">profile</a><br>
+  <form action="account/login" method="post">
+    <input type="hidden" name="username" value="username"/>
+    <input type="hidden" name="password" value="password"/>
+    <button type="submit">login</button>
+  </form>
+  <form action="account/logout" method="post">
+    <button type="submit">logout</button>
+  </form>
+
+</body>
+</html>

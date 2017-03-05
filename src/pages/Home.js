@@ -1,10 +1,22 @@
-import {HomeInterface} from './HomeInterface'
-import {gen, impl} from 'sav-decorator'
+import {get} from 'sav-router'
+import {gen, props} from 'sav-decorator'
 
 @gen
-@impl(HomeInterface)
+@props({
+  view: true
+})
 export class Home {
-  async index (ctx) {
-    ctx.body = 'xxx'
+  @get('~')
+  async index ({setState}) {
+    setState({
+      title: 'sav-koa-startkit'
+    })
+  }
+
+  @get('/about')
+  async about ({setState}) {
+    setState({
+      title: 'About'
+    })
   }
 }

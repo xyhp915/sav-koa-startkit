@@ -17,8 +17,8 @@ export class Account {
   }
   async profile ({setState}) {
     setState({
-      userId: 1001,
-      userName: 'jetiny'
+      uid: 1001,
+      username: 'jetiny'
     })
   }
 }
